@@ -1,0 +1,29 @@
+.global_input {
+    width: 100%;
+    .input_phone {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        height: 55px;
+        line-height: 55px;
+        color: #333;
+        font-size: 2.4rem;
+        font-weight: bold;
+        border-bottom: 1px solid #d7d7d7;
+    }
+    .input_phone::-webkit-input-placeholder{
+        color: #999;
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+    .input_phone::-moz-placeholder{
+        color: #999;
+        font-size: 1.6rem;    
+        font-weight: normal;
+    }
+    .input_phone:-ms-input-placeholder{
+        color: #999;      
+        font-size: 1.6rem;  
+        font-weight: normal;
+    }
+}

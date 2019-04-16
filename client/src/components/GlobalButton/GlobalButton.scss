@@ -1,0 +1,18 @@
+.global_button_box {
+    width: 100%;
+    .global_button {
+        background: #01A059;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 1.6rem;
+        width: 100%;
+        height: 4.4rem;
+        line-height: 4.4rem;
+        margin: 0 auto;
+        border: 0;
+        outline: none;
+    }
+    .global_button:active {
+        background: #005931;
+    }
+}

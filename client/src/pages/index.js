@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import home from "./home";
 import login from "./login";
+import "../assets/css/app.scss";
 
 class Index extends Component {
     render() {

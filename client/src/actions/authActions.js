@@ -1,5 +1,6 @@
 import axios from "axios";
 import { SET_CURRENT_USER } from '../constants';
+import { UPLOAD_TOKEN } from '../constants';
 // import Cookies from "js-cookie";
 
 export const setCurrentUser = (user) => {
@@ -22,6 +23,30 @@ export const login = (data = {}) => {
             }
         }).then(res => {
             // dispatch(setCurrentUser())
+            console.log(res)
+        })
+    }
+}
+
+export const uploadToken = (token) => {
+    console.log(token)
+    return {
+        type: UPLOAD_TOKEN,
+        token
+    }
+}
+
+export const getToken = (data = {}) => {
+    return dispatch => {
+        return axios({
+            method: 'post',
+            url: 'http://127.0.0.1:7001/getToken',
+            data: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json',
+            }
+        }).then(res => {
+            dispatch(uploadToken(res.data.data.token))
             console.log(res)
         })
     }

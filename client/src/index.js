@@ -8,6 +8,8 @@ import rootReducers from "./reducers";
 import thunk from "redux-thunk";
 import logger from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import globalAppJs from "./assets/js/app";
+globalAppJs.appendEmByWidth();
 
 const store = createStore(
     rootReducers, 
